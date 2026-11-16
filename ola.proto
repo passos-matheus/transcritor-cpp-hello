@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ola;
+
+service Ola {
+  rpc Diga (Pedido) returns (Resposta);
+}
+
+message Pedido {
+  string nome = 1;
+}
+
+message Resposta {
+  string texto = 1;
+}
